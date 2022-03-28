@@ -1,0 +1,54 @@
+# ===============================
+# DATABASE
+# ===============================
+
+russian-post.token: token
+russian-post.authorization-key: key
+russian-post.nal-title: 'Почта России: Наложенный платёж'
+russian-post.paid-title: 'Почта России: Посылка'
+russian-post.postal-code: 123456
+russian-post.carrier-name: Russian Post
+
+ozon-rocket.client-id: id:
+ozon-rocket.client-secret: secret
+ozon-rocket.test-client-id: id
+ozon-rocket.test-client-secret: secret
+
+ozon-rocket.pickpoint: 'Ozon Rocket: Самовывоз'
+ozon-rocket.courier: 'Ozon Rocket: Курьер'
+ozon-rocket.postamat: 'Ozon Rocket: Постамат'
+ozon-rocket.carrier-name: Ozon Rocket
+ozon-rocket.from-id: id
+ozon-rocket.no-card: '!В ПВЗ нет оплаты картой!'
+ozon-rocket.no-cash: '!В ПВЗ нет оплаты наличными!'
+ozon-rocket.no-card-and-cash: '!В ПВЗ нет оплаты при получении!'
+
+agronum.store-id: id
+agronum.token: token
+agronum.webhook.authorization: authorization
+agronum.no-nal-pl-comment: Данное отделение не поддерживает постоплату. Пожалуйста, создайте заказ заново с другим отделением.
+
+spring.datasource.driver-class-name: org.postgresql.Driver
+
+spring.datasource.url: url
+spring.datasource.username: username
+spring.datasource.password: password
+
+server.servlet.encoding.charset: UTF-8
+
+  #
+
+  # ===============================
+  # JPA / HIBERNATE
+  # ===============================
+
+spring.jpa.show-sql: false
+spring.jpa.hibernate.ddl-auto: update
+spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+
+  # Fix Postgres JPA Error:
+  # Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: false
+
+logging.level.root: WARN
